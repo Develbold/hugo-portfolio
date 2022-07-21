@@ -8,7 +8,7 @@
 <title>{{ if eq (.Site.Title) (.Title) }}{{ .Site.Title }}{{ else }}{{ .Title }} &middot; {{ .Site.Title }}{{ end }}</title>
 
 {{ $burgerJs := resources.Get "js/burger.js" | resources.Minify | fingerprint }}
-{{ $jqueryJs := resources.Get "js/jquery-3.5.0.min.js" | fingerprint }}
+{{ $jqueryJs := resources.Get "js/jquery-3.6.0.min.js" | fingerprint }}
 
 {{ $flickityMainCss := resources.Get "css/flickity.css" | resources.Minify }}
 {{ $flickityFadeCss := resources.Get "css/flickity-fade.css" | resources.Minify }}
