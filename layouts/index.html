@@ -1,5 +1,9 @@
 {{ define "main" }}
 
+{{ if .HasShortcode "leaflet-map" }}
+    {{ partial "leaflet-loader" . }}
+{{ end }}
+
 {{ .Content }}
 
 <section class="hero is-light has-text-centered">
